@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: ViewCustomerAndAllowanceInfo
+  description:  |
+    This API will return the customer details and their account current allowances.
+spec:
+  type: openapi
+  owner: Developer
+  lifecycle: production
+  definition:
+    $text: https://github.com/baludeepak7/ViewCustomerAndAllowanceInfo/blob/main/viewcustomerandallowanceinfo.yaml
+    
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: ViewCustomerAndAllowanceInfo
+  description: |
+    This API will return the customer details and their account current allowances.
+  annotations:
+    gitlab.com/project-id: '48576071'
+    sonarqube.org/project-key: com.binpipe.spboot:demo
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: production
+  owner: Developer
+  providesApis:
+    - ViewCustomerAndAllowanceInfo
