@@ -3,15 +3,12 @@
 Service Description
 ===================
 
-[[]{#scroll-bookmark-2064 .anchor}]{#_Toc256000916 .anchor}This API will
-return the customer details and their account current allowances.
+This API will return the customer details and their account current allowances.
 
 Request
 -------
 
-  Parameter Name   Description
-  ---------------- -----------------------------------
-  MSISDN           Customer MSISDN e.g. 447874384949
+MSISDN (String) -> Customer MSISDN e.g. 447874384949
 
 Response
 --------
@@ -19,33 +16,17 @@ Response
 Response will contain **Customer** and **Allowance** objects.
 
 Customer {#customer .ListParagraph}
---------
+--------                           
 
-  ------------------------------------------------------------------------------------------------------------
-  Parameter    Data Type   Description
-  ------------ ----------- -----------------------------------------------------------------------------------
-                           
+  firstName (String) -> First name of primary contact. This can be obtained from “Primary Contact” object from REST backend API response
 
-  firstName    String      First name of primary contact.
+  lastName (String) ->  Last name of primary contact. This can be obtained from “Primary Contact” object from REST backend API response
 
-                           This can be obtained from “Primary Contact” object from REST backend API response
+  middleName (String) -> Middle name of primary contact. This can be obtained from “Primary Contact” object from REST backend API response
 
-  lastName     String      Last name of primary contact.
-
-                           This can be obtained from “Primary Contact” object from REST backend API response
-
-  middleName   String      Middle name of primary contact.
-
-                           This can be obtained from “Primary Contact” object from REST backend API response
-
-  title        String      Title of primary contact.
-
-                           This can be obtained from “Primary Contact” object from REST backend API response
-
-  address      Object      Customer Address.
-
-                           This can be obtained from “Address Unit” object of REST backend API response.
-  ------------------------------------------------------------------------------------------------------------
+  title (String) -> Title of primary contact. This can be obtained from “Primary Contact” object from REST backend API response 
+  
+------------------------------------------------------------------------------------------------------------
 
 Allowance {#allowance .ListParagraph}
 ---------
