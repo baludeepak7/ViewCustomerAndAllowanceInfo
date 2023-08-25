@@ -33,10 +33,15 @@ Allowance
 
  
   freeUnitType (String) -    Free unit type.
+  
   freeUnitTypeName    (String) -     Free unit type name.
+  
   measureUnit        (String) -    Measurement unit ID for a free unit.
+  
   measureUnitName   (String) -   Measurement unit name for a free unit.
+  
   totalInitialAmount  (Long) -    Initial value for a free unit.
+  
   totalUnusedAmount   (Long) -     Current value for a free unit.
 
 It should be noted that the above structure will be repeated for each
@@ -48,5 +53,7 @@ Error response
 
   
   error           (String) -      Error code
+  
   errorDescription  (String) - Error description.
+  
   additionalInfo    (String) -     Any additional info about the root cause of the error from the backend
