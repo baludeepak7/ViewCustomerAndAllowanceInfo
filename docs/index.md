@@ -27,23 +27,23 @@ Customer {#customer .ListParagraph}
                            
 
   firstName    String      First name of primary contact.
-                           
+
                            This can be obtained from “Primary Contact” object from REST backend API response
 
   lastName     String      Last name of primary contact.
-                           
+
                            This can be obtained from “Primary Contact” object from REST backend API response
 
   middleName   String      Middle name of primary contact.
-                           
+
                            This can be obtained from “Primary Contact” object from REST backend API response
 
   title        String      Title of primary contact.
-                           
+
                            This can be obtained from “Primary Contact” object from REST backend API response
 
   address      Object      Customer Address.
-                           
+
                            This can be obtained from “Address Unit” object of REST backend API response.
   ------------------------------------------------------------------------------------------------------------
 
