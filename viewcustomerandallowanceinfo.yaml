@@ -8,6 +8,7 @@ spec:
   type: openapi
   owner: Developer
   lifecycle: demo
+  system: NEW API
   definition:
     $text: https://github.com/baludeepak7/ViewCustomerAndAllowanceInfo/blob/main/viewcustomerandallowanceinfo.yaml
     
@@ -27,5 +28,6 @@ spec:
   type: service
   lifecycle: demo
   owner: Developer
+  system: NEW API
   providesApis:
     - ViewCustomerAndAllowanceInfo
